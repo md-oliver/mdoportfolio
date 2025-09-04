@@ -1,0 +1,205 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .bakbak-one-regular {
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+:root {
+    --hero-color: #1f4c34;
+    --secondary-color: #f9f7eb;
+
+    font-family: "Ysabeau Infant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: var(--hero-color);
+    display: flex;
+    place-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        margin-left: 1rem;
+    }
+}
+
+main {
+    background-color: var(--secondary-color);
+    color: var(--hero-color);
+    width: 100%;
+
+    display: flex;
+    gap: 74px;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+#hero {
+    z-index: -1;
+    background-color: #1f4c34;
+    position: sticky;
+    top: 0;
+    left: 0;
+    color: var(--secondary-color);
+    width: 100%;
+    height: 1080px;
+    min-height: 95vh;
+    min-height: 95dvh;
+    overflow: hidden;
+
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+
+    h1 {
+        font-size: 5rem;
+        letter-spacing: -2px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #portrait {
+        /* display: block; */
+        overflow: visible;
+        display: block;
+        height: 45vh;
+        width: auto;
+        /* width: 100%; */
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        object-position: center top;
+    }
+}
+
+#wrapper {
+    background-color: var(--secondary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+    place-content: center;
+    place-items: center;
+    padding: 74px 0;
+    position: relative;
+    z-index: 1;
+
+    .header-container {
+        border-bottom: var(--hero-color) solid 1px;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    p {
+        line-height: 1.7rem;
+        letter-spacing: normal;
+    }
+}
+
+#about {
+    max-width: 500px;
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+#experience {
+    max-width: 500px;
+    width: 100%;
+}
+
+#featured-projects {
+    max-width: 500px;
+    width: 100%;
+}
+#education {
+    max-width: 500px;
+    width: 100%;
+}
+#skills {
+    max-width: 500px;
+    width: 100%;
+}
+
+#resources {
+    max-width: 500px;
+    width: 100%;
+
+    .resume-btn {
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+        background-color: var(--hero-color);
+        padding: 0.75rem;
+        border-radius: 10px;
+        transition: all ease-in-out 0.25s;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: auto;
+    }
+
+    .resume-btn:hover {
+        opacity: 0.85;
+        scale: 1.05;
+    }
+}
+
+footer {
+    height: 30vh;
+    color: var(--secondary-color);
+    background-color: var(--hero-color);
+    place-content: center;
+    text-align: center;
+
+    #socials {
+        height: 45px;
+    }
+
+    .socials-btn {
+        height: 100%;
+        fill: var(--secondary-color);
+        transition: scale 0.25s ease-in-out;
+    }
+
+    .socials-btn:hover {
+        scale: 1.15;
+        opacity: 0.85;
+    }
+}
