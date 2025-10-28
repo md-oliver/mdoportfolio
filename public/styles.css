@@ -457,49 +457,46 @@ footer {
 
 @media screen and (max-width: 425px) {
     #hero {
-        /* min-height: 95vh; */
-        /* min-height: 95dvh; */
-        /* height: 1080px; */
-        /* overflow: hidden; */
-
-        justify-content: space;
+        height: 95vh;
+        height: 95dvh;
+        /* justify-content: space-around; */
         /* flex-direction: row; */
-        place-content: center;
+        /* place-content: center; */
         place-items: center;
         flex-direction: column-reverse;
 
         #introduction {
-            height: 50%;
+            /* height: 50%; */
             place-content: center;
             place-items: center;
             margin-top: -5rem;
 
             h1 {
                 text-align: center;
-                font-size: 3.25rem;
+                font-size: 2.75rem;
                 margin: 1.5rem 0;
             }
 
             h2 {
                 text-align: center;
-                /* font-size: 1.1rem; */
+                font-size: 1.3rem;
             }
         }
 
         #portrait {
-            height: 325px;
-            width: 325px;
+            height: 250px;
+            width: 250px;
             border-radius: 50%;
             border: 2px solid var(--alt-color2);
             aspect-ratio: 1 / 1;
             overflow: hidden;
-            margin-bottom: -5rem;
+            margin-bottom: 1rem;
 
             img {
                 object-fit: cover;
                 object-position: top center;
-                height: 500px;
-                width: 500px;
+                height: 400px;
+                width: 400px;
             }
         }
     }
@@ -509,7 +506,7 @@ footer {
 
         .header-container {
             border-bottom: var(--hero-color) solid 1px;
-            margin-bottom: 1rem;
+            /* margin-bottom: 1rem; */
 
             h3 {
                 /* font-size: 1.5rem; */
@@ -544,7 +541,7 @@ footer {
     #skills,
     #resources,
     #achievements {
-        max-width: 340px;
+        max-width: 300px;
         width: 100%;
     }
 }
