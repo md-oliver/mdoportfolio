@@ -98,7 +98,7 @@ main {
         /* display: block; */
         overflow: visible;
         display: block;
-        height: 45vh;
+        height:70vh;
         width: auto;
         /* width: 100%; */
         object-fit: cover;
