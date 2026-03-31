@@ -347,7 +347,8 @@ p {
 
 .skill-stack {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
 
     .tech {
         place-content: center;
@@ -358,11 +359,11 @@ p {
 
 .badge-stack {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
 
     .badge img {
-        height: 90%;
+        height: 85%;
         place-content: center;
         place-items: center;
     }
